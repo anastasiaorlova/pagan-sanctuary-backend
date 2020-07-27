@@ -45,3 +45,53 @@ holidays = [
 holidays.each do |holiday|
 Holiday.create(image: holiday[:image], date: holiday[:date], description: holiday[:description])
 end
+
+users = [
+    {username: "GreenWitch", 
+    bio: "At heart we are all powerful, beautiful, and capable of changing the world with our bare hands.
+        ― Dianne Sylvan, The Body Sacred" },
+
+    {username: "magicisaround",
+    bio: "Don't wait for a wonder!"},
+
+    {username: "Litha",
+    bio: "Summer is here."},
+
+    {username: "the_fairy",
+    bio: "If you really want to upset a witch, do her a favor which she has no means of repaying.
+    ― Terry Pratchett, Lords and Ladies"},
+
+    {username: "SunnyChariot",
+    bio: "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.
+    ― Neil Gaiman, Coraline"}
+]
+
+users.each do |user|
+    User.create(username: user[:username], bio: user[:bio])
+    end
+
+posts = [
+    {title: "Who is a fairy?",
+    body: "A fairy (also fay, fae, fair folk) is a type of mythical being or legendary creature found in the folklore of multiple European cultures (including Celtic, Slavic, German, English, and French folklore), a form of spirit, often described as metaphysical, supernatural, or preternatural. Myths and stories about fairies do not have a single origin, but are rather a collection of folk beliefs from disparate sources. Various folk theories about the origins of fairies include casting them as either demoted angels or demons in a Christian tradition, as minor deities in Pagan belief systems, as spirits of the dead, as prehistoric precursors to humans, or as elementals. The label of fairy has at times applied only to specific magical creatures with human appearance, small stature, magical powers, and a penchant for trickery. At other times it has been used to describe any magical creature, such as goblins and gnomes. Fairy has at times been used as an adjective, with a meaning equivalent to enchanted or magical.",
+    user_id:4},
+
+    {title: "Chariot Tarot: Card Meanings",
+    body: "The Chariot is a card of willpower, determination and strength. You have discovered how to make decisions in alignment with your values with the Lovers card, and now you are taking action on those decisions. When the Chariot appears in a Tarot reading, take it as a sign of encouragement. You have set your objectives and are now channelling your inner power with a fierce dedication to bring them to fruition. When you apply discipline, commitment and willpower to achieve your goals, you will succeed.",
+    user_id:5},
+
+    {title: "The Bonfire",
+    body: "Traditionally people stayed up all night on Midsummer's Eve to welcome and watch the sunrise. Bonfires were lit on tops of hills, by holy wells, at places held sacred, to honour the fullness of the Sun. At Litha the bonfire really represents a reflection of the Sun at the peak of its strength. The chosen wood would often be Oak and aromatic herbs were scattered into the fire. People danced around the fires and leap through them. Blazing herbs from the sacred bonfire were used to bless the animals. Blazing torches were carried sunwise around homes and fields. Coals from the Midsummer fire were scattered on fields to ensure a good harvest.",
+    user_id:3},
+
+    {title: "Modern Paganism",
+    body: "Modern Paganism, also known as Contemporary Paganism and Neopaganism, is a collective term for new religious movements influenced by or derived from the various historical pagan beliefs of pre-modern peoples. Although they share similarities, contemporary Pagan religious movements are diverse, and do not share a single set of beliefs, practices, or texts.[3] Most academics who study the phenomenon treat it as a movement that is divided into different religions; others characterize it as a single religion of which different Pagan faiths are denominations.",
+    user_id:1},
+
+    {title: "Is Samhain the same as Halloween?",
+    body: "While Halloween does have roots in Samhain, they are not the same thing. Samhain is still celebrated today by various groups including Wiccans and there are many ways in which the festival is celebrated. On the other hand, Halloween is more of a civil, non-religious holiday.",
+    user_id:2}
+]
+
+posts.each do |post|
+    Post.create(title: post[:title], body: post[:body], user_id: post[:user_id])
+    end
