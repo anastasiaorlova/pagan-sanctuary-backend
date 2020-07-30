@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tags
   resources :posts, only: [:index, :show, :create, :update, :destroy]
   resources :users, only: [:index, :show, :create, :update, :destroy]
   resources :holidays, only: [:index]
