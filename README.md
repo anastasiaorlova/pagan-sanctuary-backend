@@ -1,24 +1,20 @@
-# README
+# Pagan Sanctuary --backend 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<img src="https://i.imgur.com/2n5CIUU.png"> 
 
-Things you may want to cover:
+Meet Pagan Sanctuary - app that shares info about pagan holidays and other esotheric topic!
 
-* Ruby version
+# Getting Started
 
-* System dependencies
+* Clone this repository onto your local machine.
+* Run bundle install to download all the necessary gems.
+* Run rails db:migrate to create the database.
+* Run rails db:seed to seed the database with some auto-generated data.
+* Once you all set, run 'rails s' to start the server.
 
-* Configuration
+# Functionality
 
-* Database creation
+* Home page: you can click on holidays cards and get the info / search for holidays / get a random holiday card
+* Posts page: you can CRUD posts
+* List of users: see the users that contributed to the app and their bios
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
