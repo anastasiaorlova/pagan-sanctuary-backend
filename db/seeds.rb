@@ -96,14 +96,4 @@ posts.each do |post|
     Post.create(title: post[:title], body: post[:body], user_id: post[:user_id])
     end
 
-    tags = [
-        {name: "Holiday", post_id:6},
-        {name: "Tarot", post_id:3},
-        {name: "Traditions", post_id:4},
-        {name: "Modern Paganism", post_id:5},
-        {name: "Mystical Creatures", post_id:2}
-    ]
-
-    tags.each do |tag|
-        Tag.create(name: tag[:name], post_id: tag[:post_id])
-        end
+    

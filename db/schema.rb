@@ -34,8 +34,6 @@ ActiveRecord::Schema.define(version: 2020_07_30_151833) do
 
   create_table "tags", force: :cascade do |t|
     t.string "name"
-    t.string "post"
-    t.string "belongs_to"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
