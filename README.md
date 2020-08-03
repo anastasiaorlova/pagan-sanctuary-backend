@@ -20,3 +20,8 @@ THE APP IS DEPLOYED: https://pagan-sanctuary.netlify.app/
 * Posts page: you can CRUD posts
 * List of users: see the users that contributed to the app and their bios
 
+
+Header © Elvira Brodskaya
+
+Holiday cards © Julia Nikitina (https://www.deviantart.com/julianikitina/art/Wheel-of-the-Year-579288057)
+
