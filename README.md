@@ -6,6 +6,10 @@ Meet Pagan Sanctuary - app that shares info about pagan holidays and other esoth
 
 THE APP IS DEPLOYED: https://pagan-sanctuary.netlify.app/
 
+# DEMO
+
+https://youtu.be/iybafY6AiY0
+
 # Getting Started
 
 * Clone this repository onto your local machine.
